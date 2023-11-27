@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #121212;
+      color: #bc845e;
+    }
+
+    .form-container {
+      margin-top: 50px;
+    }
+
+    /* Ajuste a cor interna dos campos para cinza */
+    input,
+    textarea,
+    select {
+      background-color: #777;
+      color: #fff9f9;
+    }
+
+    /* Ajuste a cor do botão de enviar para amarelo */
+    .btn-primary {
+      background-color: #ffc107;
+      border-color: #ffc107;
+    }
+
+    /* Mude a cor do texto do botão para preto para melhor legibilidade */
+    .btn-primary:hover {
+      color: #000;
+    }
+
+    /* Muda a cor interna dos campos input*/
+    .form-control {
+      background-color: #49494966;
+    }
+
+    /* Muda a cor interna dos campos input quando clicado*/
+    .form-control:focus{
+      background-color: #999999;
+    }
+
+
+    .img-thumbnail {
+    padding: 0.25rem;
+    background-color: #000;
+    border: 1px solid #000000;
+    border-radius: 3.25rem;
+    max-width: 100%;
+    height: auto;
+}
+  </style>
+  <title>Formulário Dark</title>
+</head>
+<header>
+  
+    
+</header>
+<body>
+  <div class="container" style="margin-bottom: -50px;">
+    <div class="row row-cols">
+      <div class="col"><img src="assets/img/logo.jpg" alt="..." class="img-thumbnail"></div>
+      <div class="col-9"><h3 style="text-align: left;">Arquivo tecnica LGF</h3></div>
+    </div>
+  </div>
+  
+  <div class="container form-container">
+    <form action="https://api.sheetmonkey.io/form/wKQrcsPey8a9DykQRcqK4Q" method="post">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="id">ID</label>
+          <input type="text" name="id" class="form-control" id="id" placeholder="ID">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="descricao">Descrição</label>
+        <textarea class="form-control" name="descricao" id="descricao" rows="3" placeholder="Descrição"></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="tag">Tag</label>
+          <input type="text" name="tag" class="form-control" id="tag" placeholder="Tag">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="local">Local</label>
+          <input type="text" name="local" class="form-control" id="local" placeholder="Local">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="status">Status</label>
+          <select id="status" name="status" class="form-control">
+            <option selected>Escolha...</option>
+            <option>Ativo</option>
+            <option>Com defeito</option>
+            <option>Pronto para uso</option>
+            <option>Sem uso</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="observacao">Observação</label>
+          <input type="text" name="observacao" class="form-control" id="observacao" placeholder="Observação">
+        </div>
+      </div>
+      
+
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Se desejar adicionar scripts JS personalizados, insira-os abaixo desta linha -->
+
+</body>
+</html>
